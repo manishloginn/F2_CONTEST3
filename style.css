@@ -197,11 +197,6 @@
   text-align: center;
 }
 
-
-
-
-
-
 .poph1 h1 {
   font-family: "Roboto", sans-serif;
   font-size: 37px;
@@ -210,8 +205,6 @@
   letter-spacing: 0em;
   text-align: center;
 }
-
-
 
 .popp {
   padding: 20px;
@@ -227,14 +220,17 @@
   letter-spacing: 0em;
 }
 
+
+
+
 .buttonnnn {
   padding: 20px;
   height: Fixed (26.58px);
   padding: 0px, 0px, 0px, 8.86px;
-  gap: 50px;
+  gap: 40px;
   display: grid;
   display: grid;
-  width: 60vw;
+  width: fit-content;
   grid-template-columns: auto auto auto auto auto;
 }
 
@@ -268,13 +264,12 @@
   box-shadow: 0px 10.450244903564453px 23.22276496887207px -6.966829299926758px #fbe18f;
 }
 
-.logooo  {
+.logooo {
   position: absolute;
   right: 0;
   top: 0;
   cursor: pointer;
 }
-
 
 .secondclick {
   position: fixed;
@@ -286,12 +281,28 @@
   display: none;
 }
 
+.options {
+  width: Hug (84.18px);
+  height: Fixed (26.58px);
+  padding: 8.86px;
+  gap: 14.77px;
+  background-color: #d1d1d1;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: 0px;
+  text-align: center;
+  margin: 0;
+}
+
 
 
 .thiscol {
   width: 100vw;
   height: 102px;
-  background-color: #FCC822  ;
+  background-color: #fcc822;
   position: fixed;
   right: 0;
   top: 200px;
@@ -300,16 +311,14 @@
 
 .thiscol p {
   width: 792px;
-height: 78px;
-font-family: "Poppins", sans-serif;
-font-size: 24px;
-font-weight: 400;
-letter-spacing: 0em;
-text-align: left;
-color: #FFFFFF;
-
+  height: 78px;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff;
 }
-
 
 .nonedisplay {
   display: none;
@@ -317,4 +326,9 @@ color: #FFFFFF;
 
 .showdisplay {
   display: flex;
+}
+
+.selected {
+  background-color: yellow;
+  
 }
