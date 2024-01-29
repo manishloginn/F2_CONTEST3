@@ -425,21 +425,16 @@ function topiccollect() {
     if (userselecttopic.length < 6) {
         alert( "select atleast 6 topic")
         return;
-    }
-
-    
+    }  
 }
 
 
 
 function loginclick(event) {
-    if (loginButton.innerText != "Login") {
-         return false; 
-        }
-    else {
+   
         let name = prompt("Enter Your Name");
         loginButton.innerHTML = `<span style="color: #FCC822; font-size: large;"><i class="fa-brands fa-servicestack"></i> ${name} <i class="fa-solid fa-caret-down"></i></span>`;
-    }
+    
 }
 
 function quetionstart(event) {
@@ -447,10 +442,16 @@ function quetionstart(event) {
 }
 
 
-function togglebar (event) {    
+function togglebar (event) {  
+  if ((loginButton.innerText == "Login") || (loginButton.innerText == "null")) {
+    alert ("Please Login First")
+  }  else {
     selectquetion.classList.toggle("nonedisplay")
     selectquetion.classList.toggle("showdisplay")
+  }
 }
+
+
 
 function quizStartt(event) {
     selectquetion.classList.remove("showdisplay")
