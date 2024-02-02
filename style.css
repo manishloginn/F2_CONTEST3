@@ -220,6 +220,14 @@
   letter-spacing: 0em;
 }
 
+/* input {
+  display: none;
+} */
+
+input:checked + label {
+  background-color: yellow;
+}
+
 
 
 
@@ -228,10 +236,22 @@
   height: Fixed (26.58px);
   padding: 0px, 0px, 0px, 8.86px;
   gap: 40px;
+  /* display: grid;
+  display: grid;
+  width: fit-content;
+  grid-template-columns: auto auto auto auto auto; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: right;
+}
+
+.chips {
   display: grid;
   display: grid;
   width: fit-content;
   grid-template-columns: auto auto auto auto auto;
+  gap: 40px;
 }
 
 .buttonnnn button {
@@ -240,16 +260,13 @@
   font-weight: 500;
   line-height: 15px;
   letter-spacing: 0px;
-  text-align: left;
-  gap: 14.77px;
+  text-align: center;
+
 }
 
 .pop13 {
-  text-align: right;
+  text-align: center;
   padding: 10px;
-}
-
-.pop13 button {
   position: relative;
   font-family: "Poppins", sans-serif;
   font-size: 14px;
@@ -264,6 +281,8 @@
   box-shadow: 0px 10.450244903564453px 23.22276496887207px -6.966829299926758px #fbe18f;
 }
 
+
+
 .logooo {
   position: absolute;
   right: 0;
@@ -271,46 +290,21 @@
   cursor: pointer;
 }
 
-.secondclick {
-  position: fixed;
-  right: 0;
-  top: 200px;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  display: none;
+
+
+
+#question button {
+  position: relative;
+  right: 15px;
+  padding: 20px;
 }
 
-.options {
-  width: Hug (84.18px);
-  height: Fixed (26.58px);
-  padding: 8.86px;
-  gap: 14.77px;
-  background-color: #d1d1d1;
-  cursor: pointer;
-  font-family: "Roboto", sans-serif;
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 15px;
-  letter-spacing: 0px;
-  text-align: center;
-  margin: 0;
-}
-
-
-
-.thiscol {
+#description {
   width: 100vw;
-  height: 102px;
   background-color: #fcc822;
-  position: fixed;
   right: 0;
   top: 200px;
   padding: 30px;
-}
-
-.thiscol p {
-  width: 792px;
   height: 78px;
   font-family: "Poppins", sans-serif;
   font-size: 24px;
@@ -318,7 +312,9 @@
   letter-spacing: 0em;
   text-align: left;
   color: #ffffff;
+
 }
+
 
 .nonedisplay {
   display: none;
