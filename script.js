@@ -498,5 +498,7 @@ function startquiz() {
 
 
 
+
+
 closebutton.addEventListener ("click", togglebar)
 Start_solving.addEventListener("click", togglebar)
