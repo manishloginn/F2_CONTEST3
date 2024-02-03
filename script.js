@@ -468,7 +468,7 @@ function enterQuiz(selectedtopics) {
 
 const question = document.getElementById("question")
 const description = document.getElementById("description")
-const options = document.getElementById("options")
+const optionsContainer = document.getElementById("options")
 
 
 function startquiz() {
@@ -482,16 +482,40 @@ function startquiz() {
   for (let key in option) {
     const div = document.createElement("div");
     div.innerHTML = `
-    <input id="${key}" value = "${option[key]}" type="radio" name="options"
+    <input id="${key}" value = "${option[key]}" type="radio" name="option"/>
     <label for ="${key}">${option[key]}</label>
-    `
+    `;
+    optionsContainer.appendChild(div);
 
-    options.appendChild(div)
+    option.addEventListener("click", (e) => {
+        userSelectedOption=e.target;
+    })
   }
-
-
-
 }
+
+
+
+const next = document.getElementById("next")
+
+
+
+// function checkans() {
+//     next.addEventListener("click", (e)=>{
+//         let selectanswer = option.checked
+//         console.log(selectanswer)
+//     })
+// }
+
+let userSelectedOption = [];
+
+
+
+
+
+
+
+
+
 
 
 
