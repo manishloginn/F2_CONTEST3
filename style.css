@@ -86,8 +86,14 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   /* display: none; */
+}
+
+.herosessssss {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero1 {
@@ -223,6 +229,7 @@
 input {
   display: none;
 }
+
 
 input:checked + label {
   background-color: yellow;
