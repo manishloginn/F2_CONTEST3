@@ -402,9 +402,17 @@ const herosection = document.getElementById("herosection")
 const selectquetion = document.getElementById("selectquetion")
 let score = 0;
 
+const login = document.getElementById("login_button")
+
+login.addEventListener("click", () =>{
+    prompt("enter your name")
+})
+
+if(login.innerText === "Login") {
+    alert("please login first")
+}
 
 function togglebar(event) {
-
     selectquetion.classList.toggle("showdisplay")
     selectquetion.classList.toggle("hidedisplay")
 }
@@ -444,8 +452,9 @@ form.addEventListener("submit", (e) => {
     })
     //   console.log(count)
     console.log(selectedtopics)
-    if (count < 1) {
-        alert("select more than 2")
+ 
+    if (count < 1 ) {
+        
     } else {
         enterQuiz(selectedtopics)
     }
@@ -531,8 +540,6 @@ function startquiz() {
 
 
 
-    //   console.log( selectedOption)
-
     console.log(score)
 
     console.log("activeindex" + activequetionindex)
@@ -545,15 +552,17 @@ function startquiz() {
 }
 
 next.addEventListener("click", () => {
+    if (!selectedOption) {
+        alert("Please select")
+        activequetionindex--
+    }
     if (selectedOption == ans) {
         score += 5
     }
     console.log(score)
     activequetionindex++
     startquiz()
-
-
-
+    selectedOption = null;
 
 })
 
